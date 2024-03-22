@@ -1,9 +1,8 @@
 package com.aggr.invest.service;
 
-import com.aggr.invest.controller.CreateUserDTO;
+import com.aggr.invest.controller.dto.CreateUserDTO;
 import com.aggr.invest.entity.User;
 import com.aggr.invest.repository.UserRepository;
-import jakarta.persistence.OneToMany;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
