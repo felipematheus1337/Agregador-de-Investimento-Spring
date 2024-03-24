@@ -21,7 +21,7 @@ public class AccountController {
         this.accountService = accountService;
     }
 
-    @PostMapping("/{accountId}/stocks   ")
+    @PostMapping("/{accountId}/stocks")
     public ResponseEntity<Void> associateStock(@PathVariable("accountId") String accountId,
                                                @RequestBody AssociateAccountStockDto dto) {
 
@@ -31,12 +31,12 @@ public class AccountController {
 
     }
 
-    @GetMapping("/{accountId}/stocks   ")
+    @GetMapping("/{accountId}/stocks")
     public ResponseEntity<List<AccountStockResponseDto>> associateStock(@PathVariable("accountId") String accountId) {
 
         var stocks = accountService.listStocks(accountId);
 
-        return ResponseEntity.ok(stocks).build();
+        return ResponseEntity.ok(stocks);
 
     }
 }
